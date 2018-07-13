@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OneFragment"
+    >
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="com.bus.huyma.hbus.fragments.OneFragment"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_detail_walk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:alpha="0.6"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/distance_route"
+                />
+            <TextView
+                android:id="@+id/walking_distance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="0.0 Km"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/duration_route"
+                />
+            <TextView
+                android:id="@+id/walking_duration_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="60 phut"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hướng dẫn đường đi chi tiết:"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/walking_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go go go..."
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_labels_position="right"
+        fab:menu_shadowColor="#444"
+        fab:menu_colorNormal="#125688"
+        fab:menu_colorPressed="#283593"
+        fab:menu_colorRipple="#303f9f"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabSubNearestPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nearest_place"
+            fab:fab_size="mini"
+            fab:fab_label="Các trạm quanh đây"
+            fab:fab_colorNormal="#125688"
+            fab:fab_colorPressed="#283593"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabSubDirectionGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/direction"
+            fab:fab_size="mini"
+            fab:fab_label="Chỉ đường"
+            fab:fab_colorNormal="#125688"
+            fab:fab_colorPressed="#283593"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabSubWalking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/walking"
+            fab:fab_size="mini"
+            fab:fab_label="Đi bộ đến trạm gần"
+            fab:fab_colorNormal="#125688"
+            fab:fab_colorPressed="#283593"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

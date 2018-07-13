@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".activity.sendFeedBack.MainActivity">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/linear1"
+            android:gravity="top"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:id="@+id/et_Search"
+                android:layout_gravity="center_vertical"
+                android:hint="Nhập thông tin cần tìm"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="2" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/sp_search"
+                android:layout_gravity="center_horizontal|top"
+                android:contextClickable="false"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgbt_Search"
+                android:background="@drawable/search_frag_ba"
+
+                android:layout_weight="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã xe"
+                android:id="@+id/textView3"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên tuyến xe buýt"
+                android:id="@+id/textView4"
+                android:textColor="#000"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LV_1"
+            android:divider="@color/colorPrimary"
+            android:dividerHeight="3sp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_below="@+id/linear2"/>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_3"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            fab:menu_labels_style="@style/MenuLabelsStyle"
+            fab:menu_labels_showAnimation="@anim/jump_from_down"
+            fab:menu_labels_hideAnimation="@anim/jump_to_down"
+            fab:menu_animationDelayPerItem="0"
+            fab:menu_shadowColor="#444"
+            fab:menu_colorNormal="#125688"
+            fab:menu_colorPressed="#283593"
+            fab:menu_colorRipple="#303f9f"
+            >
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabSubCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sendmail"
+                fab:fab_label="Phản hồi xe buýt"
+                style="@style/MenuButtonsStyle"
+                fab:fab_size="mini"
+                fab:fab_colorNormal="#125688"
+                fab:fab_colorPressed="#283593"/>
+        </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

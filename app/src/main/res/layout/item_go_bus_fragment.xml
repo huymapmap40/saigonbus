@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgHuongDan"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/bus_guide"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="noi dung"
+                android:id="@+id/txtHuongDanDi"
+                android:layout_weight="6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#000" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

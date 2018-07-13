@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Sài Gòn Bus</string>
+    <string name="bus_activity_name">bus route</string>
+    <string name="title_activity_maps">Tìm buýt</string>
+    <string name="one">ONE</string>
+    <string name="two">TWO</string>
+    <string name="three">THREE</string>
+    <string name="content_description_image">description</string>
+
+    <!-- Tao 3 String array de the hien cac muc lua chon cho cac chuc nang trong MENU
+        cua BusRouteActivity.java
+    -->
+    <string-array name="settingHienThi" >
+        <item >Có </item>
+        <item >Không </item>
+    </string-array>
+
+    <string-array name="settingKieuHienThi" >
+        <item >Cả 2 lượt</item>
+        <item >Lượt đi</item>
+        <item >Lượt về</item>
+    </string-array>
+
+    <string-array name="settingChonViTri" >
+        <item >Đầu bến</item>
+        <item >Cuối bến</item>
+    </string-array>
+
+    <!--Tao String array de luu giu cac tuy chon ve "So xe tuyen xe toi da can di"
+    cua dialog TIM DUONG trong OneFragment.java
+    -->
+    <string-array name="maxBus">
+        <item>1 tuyến</item>
+        <item>2 tuyến</item>
+        <item>3 tuyến</item>
+        <item>4 tuyến</item>
+    </string-array>
+
+</resources>

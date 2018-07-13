@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BusRouteActivity">
+    <item
+        android:id="@+id/itemHienThiTramDung"
+        android:title="Hiển thị trạm dừng"/>
+    <item
+        android:id="@+id/itemHienThiLoTrinh"
+        android:title="Hiển thị lộ trình"/>
+    <item
+        android:id="@+id/itemKieuHienThi"
+        android:title="Kiểu hiển thị"/>
+    <item
+        android:id="@+id/itemChonViTri"
+        android:title="Chọn vị trí"/>
+</menu>

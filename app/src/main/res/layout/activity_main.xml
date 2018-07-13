@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".activity.sendFeedBack.MainActivity"
+    android:id="@+id/mainlayout"
+    android:weightSum="1">
+
+    <!--    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và Tên"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edname"
+            android:hint=".........................." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edmail"
+            android:hint=".........................." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa Chỉ"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edadd"
+            android:hint=".........................." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại liên hệ"
+            android:id="@+id/textView7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edphone"
+            android:hint=".........................." />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nội Dung"
+            android:id="@+id/textView9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edcontent"
+            android:hint="................................................." />-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="367dp"
+        android:id="@+id/lsviewmain"
+        android:layout_weight="0.30" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Đính kèm "
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:id="@+id/btdialog"
+        android:layout_gravity="center_horizontal"
+
+
+        android:drawableLeft="@drawable/attachment_icon"/>
+
+    <Button
+        android:layout_width="185dp"
+        android:layout_height="69dp"
+        android:id="@+id/btsend"
+        android:layout_gravity="center"
+        android:text="GỬI ĐI"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:drawableLeft="@drawable/sendm_icon"
+        android:background="#ffffff" />
+
+</LinearLayout>
+
